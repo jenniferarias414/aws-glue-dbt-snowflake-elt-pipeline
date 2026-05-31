@@ -1,0 +1,1 @@
+note: The Glue IAM role allows AWS Glue to run the Python extraction job and write the API output into the project S3 bucket. CloudWatch Logs access allows Glue job runs to be monitored and debugged.
