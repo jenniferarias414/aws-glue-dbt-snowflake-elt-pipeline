@@ -1,0 +1,27 @@
+# Private notes and course material
+notes/private/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# dbt
+target/
+dbt_packages/
+logs/
+profiles.yml
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Large/raw data exports
+data/
+output/
+*.csv
+*.json
+*.parquet
