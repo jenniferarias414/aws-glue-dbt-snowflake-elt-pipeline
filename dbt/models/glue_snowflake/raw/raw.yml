@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: raw_country_details
+    description: "Raw layer table created from the staged country details JSON file."
+    columns:
+      - name: source_data
+        description: "Semi-structured JSON object for each country record."
+        tests:
+          - not_null
+
+sources:
+  - name: country
+    database: GLUEDB
+    schema: PUBLIC
+    tables:
+      - name: COUNTRY_DETAILS_CP

@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: transform_country_details
+    description: "Transform layer table that extracts structured country attributes from the raw JSON data."
+    columns:
+      - name: country_common_name
+        description: "Common country name."
+        tests:
+          - not_null
+
+      - name: country_continent_name
+        description: "Continent associated with the country."
+        tests:
+          - not_null
+
+      - name: country_currency_name
+        description: "Currency name associated with the country."
+
+      - name: country_population
+        description: "Country population from the source JSON."
+
+      - name: insert_dts
+        description: "Timestamp when the transform model was created."

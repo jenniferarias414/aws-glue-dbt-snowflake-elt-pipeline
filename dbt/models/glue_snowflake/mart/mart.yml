@@ -1,0 +1,79 @@
+version: 2
+
+models:
+  - name: country_details_africa
+    description: "Mart table containing country details for Africa."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Africa']
+
+  - name: country_details_antarctica
+    description: "Mart table containing country details for Antarctica."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Antarctica']
+
+  - name: country_details_asia
+    description: "Mart table containing country details for Asia."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Asia']
+
+  - name: country_details_europe
+    description: "Mart table containing country details for Europe."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Europe']
+
+  - name: country_details_north_america
+    description: "Mart table containing country details for North America."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['North America']
+
+  - name: country_details_oceania
+    description: "Mart table containing country details for Oceania."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Oceania']
+
+  - name: country_details_south_america
+    description: "Mart table containing country details for South America."
+    columns:
+      - name: country_continent_name
+        description: "Continent name for the country."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['South America']
