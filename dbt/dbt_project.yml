@@ -1,0 +1,29 @@
+name: "aws_glue_dbt_snowflake_elt_pipeline"
+version: "1.0.0"
+config-version: 2
+
+profile: "aws_glue_dbt_snowflake_elt_pipeline"
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  target_schema: PUBLIC
+  stage_name: GLUEDB.PUBLIC.GLUE_S3_STAGE
+
+models:
+  aws_glue_dbt_snowflake_elt_pipeline:
+    glue_snowflake:
+      raw:
+        +materialized: table
+        +schema: RAW
+      transform:
+        +materialized: table
+        +schema: TRANSFORM
+      mart:
+        +materialized: table
+        +schema: MART
