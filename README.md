@@ -10,6 +10,8 @@ This project was completed as part of my data engineering studies and expanded i
 
 ## Architecture
 
+![AWS Glue dbt Snowflake ELT architecture](diagrams/aws-glue-dbt-snowflake-elt-architecture.png)
+
 The end-to-end flow:
 
 ```text
