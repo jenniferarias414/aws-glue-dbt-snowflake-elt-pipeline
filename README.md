@@ -8,6 +8,7 @@ The pipeline extracts country details data from an external JSON source, lands t
 
 This project was completed as part of my data engineering studies and expanded into a portfolio-ready repo with documentation, validation screenshots, and clear project structure.
 
+
 ## Architecture
 
 The end-to-end flow:
